@@ -1,0 +1,96 @@
+<html lang="ru"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>АШ</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+   
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<style type="text/css">
+#head{
+	position: absolute;
+	left: 0vw;
+	top: 0vw;
+	height: 28vw;
+	width: 100%;
+	z-index: 1;
+	background: #4db789;
+}
+
+#title_head{
+	position: absolute;
+	left: 6vw;
+	bottom: 6vw;
+	font-weight: bold;
+	font-size: 6vw;
+	color: #ffffff;
+	z-index: 2;
+}
+
+#main{
+	position: absolute;
+	left: 0vw;
+	top: 28vw;
+	height: 100vw;
+	width: 100%;
+	z-index: 1;
+	background: #a0a3d6;
+}
+
+#card_box{
+	position: absolute;
+	left: 8vw;
+	top: 12vw;
+	height: 52vw;
+	width: 86vw;
+	border-radius: 5vw;
+	z-index: 2;
+	background: #ffffff;
+}
+
+#barcode {
+	position: absolute;
+	top: 5vw;
+	left: 10vw;
+	width: 66vw;
+	height: 42vw;
+	z-index: 3;
+}
+
+#title_card{
+	position: absolute;
+	left: 8vw;
+	bottom: 12vw;
+	#font-weight: bold;
+	font-size: 4.6vw;
+	color: #ffffff;
+	z-index: 2;
+}
+
+#title_balance{
+	position: absolute;
+	right: 22vw;
+	bottom: 12vw;
+	#font-weight: bold;
+	font-size: 10vw;
+	color: #ffffff;
+	z-index: 2;
+}
+</style></head>
+
+<body>
+	<div id="head" onclick="toggleFullScreen()">
+		<span id="title_head">Бонусная карта</span>
+	</div>
+	<div id="main">
+		<div id="card_box">
+  <div style="text-align: center;">
+  <p><img src='https://barcode.tec-it.com/barcode.ashx?data=3100071446411&code=EAN13&multiplebarcodes=true&translate-esc=true&unit=Px&dpi=96&imagetype=Svg&rotation=0&color=%23000000&bgcolor=%23ffffff&codepage=Default&qunit=Mm&quiet=0&hidehrt=False&modulewidth=1.5' width="1200" height="1100" class="rightpic">
+  </p>
+</div>
+			<canvas id="barcode" width="234" height="142"></canvas>
+		</div>
+		<span id="title_card">Ваш бонусный<br>баланс</span>
+		<span id="title_balance">1488</span>
+	</div>
+</body></html>
